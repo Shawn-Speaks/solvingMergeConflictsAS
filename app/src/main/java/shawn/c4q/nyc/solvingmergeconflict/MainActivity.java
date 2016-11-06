@@ -145,5 +145,12 @@ public class MainActivity extends AppCompatActivity {
         return 11;
     }
 
+    static void goodFunction(){
+        System.out.println("Why hello good sir");
+    }
+
+
+
+
 
 }
