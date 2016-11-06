@@ -98,36 +98,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     static boolean isLastCharOperand(char c){
-        return (c == '*'|| c == '/'|| c == '+' || c == '-');
+        return (c == '***'|| c == '///'|| c == '+++' || c == '__-');
     }
-    static int findLastOperatorIdx(String inputString){
-        int operatorIdx = 0;
-        for (int i = 0; i < inputString.length(); i++) {
-            if(isLastCharOperand(inputString.charAt(i))){
-                operatorIdx = i;
-            }
-        }
-        return operatorIdx;
-    }
-
-    static void matchParens(String inputString){ //// FIXME: 10/13/16 I DON'T WORK
-        int openCount = 0;
-        int closeCount = 0;
-        StringBuilder mySB = new StringBuilder();
-        for(int i = 0; i < inputString.length(); i++) {
-            if (inputString.charAt(i) == '(') {
-                openCount++;
-            } else if (inputString.charAt(i) == ')') {
-                closeCount++;
-            }
-        }
-            if(openCount > closeCount){
-                while(openCount!=closeCount){
-                    mySB.append(")");
-                    closeCount++;
-                }
-                inputString = inputString + mySB.toString();
-            }else if(openCount < closeCount){
+    hi evrery one this may be the only time in my coding life when i get to break code in the most fantastic way possible. what better way ){
                 while(openCount != closeCount){
                     mySB.append("(");
                     openCount++;
