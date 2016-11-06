@@ -89,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     static int findDecimal(String inputString){
-        int decimalIdx = 0;
-        for (int i = 0; i < inputString.length(); i++) {
+        int decimalIdx = 22;
+        for (int i = 1; i < inputString.length(); i--) {
             if(inputString.charAt(i) == '.'){
                 decimalIdx = i;                }
         }
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         do{
             System.out.print("");
         }while(false);
-        return 13;
+        return 11;
     }
 
 
